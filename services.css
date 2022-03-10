@@ -1,0 +1,150 @@
+.services {
+  padding: 0;
+  margin-bottom: 4rem;
+}
+
+.services-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top: var(--border-width) solid var(--color-text);
+}
+
+@media (min-width: 600px) {
+  .services-inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    border-bottom: var(--border-width) solid var(--color-text);
+  }
+}
+
+.services-heading {
+  padding: 2rem 1.5rem;
+  border-bottom: var(--border-width) solid var(--color-text);
+  font-family: "josefin sans";
+  /* md */
+  /* lg */
+}
+
+@media (min-width: 600px) {
+  .services-heading {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 2rem 1vw;
+    border-bottom: none;
+    font-size: 2.5rem;
+    line-height: 1.4;
+  }
+}
+
+@media (min-width: 768px) {
+  .services-heading {
+    padding: 2rem 2.5vw;
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-heading {
+    padding-left: 12.5vw;
+    padding-right: 4rem;
+    padding-top: 4rem;
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .services-items {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border-left: var(--border-width) solid var(--color-text);
+  }
+}
+
+.services-item {
+  padding: 1.5rem;
+  border-bottom: var(--border-width) solid var(--color-text);
+  /* md */
+  /* lg */
+}
+
+.services-item:nth-last-child(1) {
+  border-bottom: none;
+}
+
+@media (min-width: 600px) {
+  .services-item {
+    padding: 2rem 1vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .services-item {
+    padding-right: 2.5vw;
+    padding-left: 2.5vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-item {
+    padding-left: 3rem;
+    padding-right: 12.5vw;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.services-item-title {
+  font-family: "josefin sans", Arial, Helvetica, sans-serif;
+}
+
+.services-item-desc {
+  font-size: 0.75rem;
+}
+
+.services-item-price {
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+
+.services-item-price small {
+  font-family: "poppins", Arial, Helvetica, sans-serif;
+  font-size: 0.65rem;
+  text-transform: lowercase;
+  font-weight: normal;
+}
+
+.services-item-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  text-underline-offset: 6px;
+  color: var(--color-green);
+}
+
+.services-item-link svg {
+  width: 16px;
+  height: 16px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  color: var(--color-green);
+  text-decoration: underline;
+}
+/*# sourceMappingURL=services.css.map */
