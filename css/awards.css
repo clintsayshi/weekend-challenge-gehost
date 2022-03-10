@@ -1,0 +1,65 @@
+/* 
+
+  Section 04: Awards
+
+*/
+.awards {
+  padding: 4rem 0;
+}
+
+.awards-heading {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.25);
+  margin-bottom: 2rem;
+  /* md */
+  /* lg */
+}
+
+@media (min-width: 600px) {
+  .awards-heading {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .awards-heading {
+    font-size: 4rem;
+  }
+}
+
+.awards-items {
+  list-style: none;
+}
+
+.awards-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: var(--border-width) solid var(--color-text);
+  padding: 1.25rem 0;
+}
+
+.awards-item-name-no {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.75rem;
+}
+
+.awards-item-no,
+.awards-item-title,
+.awards-item-year {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "josefin sans";
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=awards.css.map */
