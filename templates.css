@@ -1,0 +1,120 @@
+/* 
+
+  Section 02: Templates
+
+*/
+.templates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 600px) {
+  .templates {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+  .templates > * {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+.templates-desc {
+  background: var(--color-green);
+  padding: 2rem 1.5rem;
+  color: var(--color-bg);
+  /* md */
+  /* lg */
+}
+
+@media (min-width: 600px) {
+  .templates-desc {
+    padding: 2rem 1vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .templates-desc {
+    padding: 2rem 2.5vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .templates-desc {
+    padding-left: 12.5vw;
+    padding-right: 4rem;
+    padding-top: 4rem;
+  }
+}
+
+.templates-desc-heading {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.templates-desc-text {
+  line-height: 1.2;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.templates-desc-actions {
+  padding-top: 1.5rem;
+}
+
+.templates-desc-actions button {
+  background: transparent;
+  border: var(--color-bg) solid var(--border-width);
+  padding: 0.5rem;
+}
+
+.templates-desc-actions button svg {
+  width: 20px;
+  height: 20px;
+  color: var(--color-bg);
+}
+
+.templates-preview {
+  position: relative;
+  padding: 1rem 1.5rem;
+  /* md */
+  /* lg */
+}
+
+@media (min-width: 600px) {
+  .templates-preview {
+    padding: 2rem 1vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .templates-preview {
+    padding: 2rem 2.5vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .templates-preview {
+    padding-right: 12.5vw;
+    padding-left: 4rem;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.templates-preview-slide {
+  text-align: right;
+  padding: 1rem;
+}
+/*# sourceMappingURL=templates.css.map */
