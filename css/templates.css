@@ -3,30 +3,21 @@
   Section 02: Templates
 
 */
-.templates {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 1.5rem;
-  margin-bottom: 4rem;
-}
 
-@media (min-width: 600px) {
-  .templates {
-    display: -ms-grid;
+.templates {
+  display: flex;
+  flex-direction: column;
+  //gap: 1.5rem;
+  margin-bottom: 4rem;
+
+  @media (min-width: 600px) {
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 0;
-  }
-  .templates > * {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+
+    & > * {
+      flex: 1;
+    }
   }
 }
 
@@ -34,24 +25,16 @@
   background: var(--color-green);
   padding: 2rem 1.5rem;
   color: var(--color-bg);
-  /* md */
-  /* lg */
-}
 
-@media (min-width: 600px) {
-  .templates-desc {
+  @media (min-width: 600px) {
     padding: 2rem 1vw;
   }
-}
-
-@media (min-width: 768px) {
-  .templates-desc {
+  /* md */
+  @media (min-width: 768px) {
     padding: 2rem 2.5vw;
   }
-}
-
-@media (min-width: 1024px) {
-  .templates-desc {
+  /* lg */
+  @media (min-width: 1024px) {
     padding-left: 12.5vw;
     padding-right: 4rem;
     padding-top: 4rem;
@@ -71,50 +54,76 @@
 
 .templates-desc-actions {
   padding-top: 1.5rem;
-}
 
-.templates-desc-actions button {
-  background: transparent;
-  border: var(--color-bg) solid var(--border-width);
-  padding: 0.5rem;
-}
-
-.templates-desc-actions button svg {
-  width: 20px;
-  height: 20px;
-  color: var(--color-bg);
+  button {
+    background: transparent;
+    border: var(--color-bg) solid var(--border-width);
+    padding: 0.5rem;
+    cursor: pointer;
+    svg {
+      width: 20px;
+      height: 20px;
+      color: var(--color-bg);
+    }
+  }
 }
 
 .templates-preview {
   position: relative;
-  padding: 1rem 1.5rem;
-  /* md */
-  /* lg */
-}
+  // padding: 0 1.5rem;
 
-@media (min-width: 600px) {
-  .templates-preview {
-    padding: 2rem 1vw;
-  }
-}
-
-@media (min-width: 768px) {
-  .templates-preview {
-    padding: 2rem 2.5vw;
-  }
-}
-
-@media (min-width: 1024px) {
-  .templates-preview {
-    padding-right: 12.5vw;
-    padding-left: 4rem;
-    padding-top: 0;
-    padding-bottom: 0;
+  @media (min-width: 600px) {
+    padding: 0;
   }
 }
 
 .templates-preview-slide {
-  text-align: right;
-  padding: 1rem;
+  width: 100%;
+  display: block;
+  position: absolute;
+
+  pointer-events: none;
+  opacity: 0;
+  //transform: scale(0);
+  transform-origin: center;
+  //transition: all 1s ease-in-out;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+  }
 }
-/*# sourceMappingURL=templates.css.map */
+
+.template-preview-active {
+  position: relative;
+  opacity: 1;
+  pointer-events: all;
+  transition: all 1s ease-in-out;
+}
+
+.templates-preview-slide-number {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  padding: 0.5rem;
+  background: rgba(#000, 0.5);
+  background-blend-mode: exclusion;
+
+  @media (min-width: 600px) {
+    padding-right: 1vw;
+  }
+  /* md */
+  @media (min-width: 768px) {
+    padding-right: 2.5vw;
+  }
+  /* lg */
+  @media (min-width: 1024px) {
+    padding-right: 12.5vw;
+  }
+}
