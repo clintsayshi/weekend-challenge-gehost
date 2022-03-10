@@ -1,0 +1,102 @@
+/* 
+
+  Section 05: Getting Started
+
+*/
+@media (min-width: 600px) {
+  .getting-started-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 2rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+.getting-started-heading {
+  color: rgba(255, 255, 255, 0.25);
+  text-align: left;
+}
+
+.getting-started-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  padding-bottom: var(--padding-width);
+  border-bottom: var(--border-width) solid var(--color-text);
+}
+
+@media (min-width: 600px) {
+  .getting-started-item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.started-item-play-btn {
+  min-width: 100px;
+  width: 100%;
+  height: 200px;
+  border: var(--border-width) solid var(--color-green);
+}
+
+.started-item-play-btn img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 600px) {
+  .started-item-play-btn {
+    width: 150px;
+  }
+}
+
+.started-item-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 5px;
+}
+
+.started-item-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  opacity: 0.5;
+  font-size: 12px;
+  font-family: "poppins";
+}
+/*# sourceMappingURL=getting-started.css.map */
